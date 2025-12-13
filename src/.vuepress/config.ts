@@ -6,8 +6,16 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "文档演示",
-  description: "vuepress-theme-hope 的文档演示",
+  title: "林海听风语",
+  description: "林海听风语的个人博客",
+
+  locales: {
+    "/": {
+      lang: "zh-CN",
+      title: "林海听风语",
+      description: "林海听风语的个人博客",
+    }
+  },
 
   theme,
 

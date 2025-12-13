@@ -4,45 +4,54 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://hopefullyhh.github.io",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "林海听风语",
+    url: "https://hopefullyhh.github.io/blog",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/logo.jpg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "hopefullyhh/my-blog-docs",
+  repoDisplay: true,
+  repoLabel: "GitHub",
+
+  changelog: true,
 
   docsDir: "src",
+  docsRepo: "hopefullyhh/my-blog-docs",
+  docsBranch: "main",
 
-  // 导航栏
-  navbar,
-
-  // 侧边栏
-  sidebar,
-
-  // 页脚
-  footer: "默认页脚",
-  displayFooter: true,
-
-  // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
-      },
-    },
+  navbarLayout: {
+    start: ["Brand"],
+    center: ["Links"],
+    end: ["Language", "Repo", "Outlook", "Search"],
   },
 
-  // 多语言配置
+  navbar,
+
+  sidebar,
+  
+  fullscreen: true,
+
+  copyright: false,
+  footer: `使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2025-至今 林海听风语`,
+  displayFooter: true,
+
+  // encrypt: {
+  //   config: {
+  //     "/demo/encrypt.html": {
+  //       hint: "Password: 1234",
+  //       password: "1234",
+  //     },
+  //   },
+  // },
+
   metaLocales: {
     editLink: "在 GitHub 上编辑此页",
   },
 
-  // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
 
   // 此处开启了很多功能用于演示，你应仅保留用到的功能。
@@ -119,20 +128,25 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
-    // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+    slimsearch: {
+      indexContent: true,
     },
+
+    // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     components: {
       components: ["Badge", "VPCard"],
     },
 
     icon: {
+      assets: "iconify",
       prefix: "fa6-solid:",
     },
 
