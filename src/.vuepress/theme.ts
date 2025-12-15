@@ -32,12 +32,26 @@ export default hopeTheme({
   navbar,
 
   sidebar,
-  
+
   fullscreen: true,
 
   copyright: false,
   footer: `使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2025-至今 林海听风语`,
   displayFooter: true,
+
+  blog: {
+    description: "千里之行，始于足下",
+    intro: "/portfolio.html",
+    medias: {
+      Gitee: "https://example.com",
+      GitHub: "https://github.com/hopefullyhh?tab=repositories",
+      Gitlab: "https://example.com",
+      VuePressThemeHope: {
+        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
+        link: "https://theme-hope.vuejs.press",
+      },
+    },
+  },
 
   // encrypt: {
   //   config: {
@@ -52,7 +66,7 @@ export default hopeTheme({
     editLink: "在 GitHub 上编辑此页",
   },
 
-  // hotReload: true,
+  hotReload: true,
 
   // 此处开启了很多功能用于演示，你应仅保留用到的功能。
   markdown: {
@@ -131,6 +145,7 @@ export default hopeTheme({
     slimsearch: {
       indexContent: true,
     },
+    blog: true,
 
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     // comment: {
