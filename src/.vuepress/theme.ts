@@ -8,16 +8,16 @@ export default hopeTheme({
 
   author: {
     name: "林海听风语",
-    url: "https://hopefullyhh.github.io/blog",
+    url: "https://hopefullyhh.github.io/my-blog-docs/",
   },
 
   logo: "/logo.jpg",
 
+  favicon: "/favicon.ico",
+
   repo: "hopefullyhh/my-blog-docs",
   repoDisplay: true,
   repoLabel: "GitHub",
-
-  changelog: true,
 
   docsDir: "src",
   docsRepo: "hopefullyhh/my-blog-docs",
