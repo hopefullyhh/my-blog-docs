@@ -3,7 +3,7 @@ import { webpackBundler } from '@vuepress/bundler-webpack'
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/",
+  base: "/my-blog-docs/",
 
   lang: "zh-CN",
   title: "林海听风语",
