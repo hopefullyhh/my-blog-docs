@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:
+
+Sitemap: https://hopefullyhh.github.io/my-blog-docs/sitemap.xml
